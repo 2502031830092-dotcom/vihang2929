@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Simple App</title>
+  </head>
+  <body>
+    <h1>Counter App</h1>
+    <p>Click the button below to see the count go up.</p>
+    
+    <!-- The App Button -->
+    <button onclick="countUp()">Click Me!</button>
+    
+    <!-- Where the app shows the result -->
+    <p>Total Clicks: <span id="counter">0</span></p>
+
+    <!-- The App Logic (JavaScript) -->
+    <script>
+      let total = 0;
+      function countUp() {
+        total = total + 1;
+        document.getElementById("counter").innerText = total;
+      }
+    </script>
+  </body>
+</html>
